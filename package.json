@@ -1,0 +1,36 @@
+{
+  "name": "guitar-harmony",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "harmony:eval": "tsx scripts/harmony/eval-engine.ts",
+    "harmony:file": "tsx scripts/harmony/eval-file.ts",
+    "harmony:songs": "tsx scripts/harmony/eval-songs.ts",
+    "harmony:mistakes": "tsx scripts/harmony/eval-mistakes.ts",
+    "harmony:demo": "tsx scripts/harmony/make-demo.ts",
+    "harmony:corpus": "tsx scripts/harmony/eval-corpus.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/space-grotesk": "^5.1.0",
+    "@fontsource/archivo-black": "^5.1.0",
+    "@tensorflow/tfjs-backend-cpu": "^4.22.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.22.0",
+    "@tensorflow/tfjs-converter": "^4.22.0",
+    "@tensorflow/tfjs-core": "^4.22.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs-backend-wasm": "^4.22.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.23.15",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  }
+}
